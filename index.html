@@ -69,10 +69,37 @@ html{scroll-behavior:smooth}
 
 <style>
 .category-card{transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
-.category-card img{height:245px!important;object-fit:contain!important;padding:18px;background:#fff}
+.category-card img{width:100%!important;height:320px!important;object-fit:contain!important;padding:20px!important;background:#fff!important;border-bottom:1px solid #e7edf1}
 .category-card p{margin:.55rem 0 0;font-size:.92rem!important;line-height:1.5!important;color:#5b6770!important}
 .category-card:hover{transform:translateY(-5px);box-shadow:0 18px 42px rgba(2,18,40,.14);border-color:#d2dce3}
 </style>
+
+<style>
+#productos .product-grid{
+  align-items:stretch;
+}
+#productos .category-card{
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  min-height:540px;
+}
+#productos .category-card > div{
+  padding:24px 22px 26px;
+  flex:1;
+}
+#productos .category-card h3{
+  margin:.35rem 0 .55rem;
+}
+@media(max-width:900px){
+  #productos .category-card img{height:290px!important}
+  #productos .category-card{min-height:auto}
+}
+@media(max-width:620px){
+  #productos .category-card img{height:260px!important;padding:16px!important}
+}
+</style>
+
 </head>
 <body>
 <div class="topbar"><div class="container topbar-inner"><span>Agencia BTL y Marketing Outsourcing · Lima, Perú</span><div><a href="tel:+51997164811">997 164 811</a><i>·</i><a href="mailto:vcarassa@gmail.com">vcarassa@gmail.com</a></div></div></div>

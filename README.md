@@ -1,17 +1,15 @@
-STRATEGY VMK — WEB V8.1 CATÁLOGO CORREGIDO
+STRATEGY VMK — WEB V8.2 IMÁGENES AMPLIADAS
 
-Esta versión corrige la presentación del catálogo de productos.
-
-Cambios:
-- El botón “Productos” vuelve a dirigir directamente a la sección de productos.
-- Se eliminó el menú desplegable automático del encabezado.
-- Las nuevas categorías se presentan como tarjetas con fotografía representativa y descripción.
-- Se eliminaron de la vista principal las capturas de tablas del catálogo.
-- Las tablas detalladas por código y descripción quedan reservadas para una futura versión.
-- Se conserva el diseño corporativo, la navegación y la sección de contacto aprobados.
+Cambios realizados:
+- Se reemplazaron las fotografías de las siete nuevas categorías por las imágenes proporcionadas.
+- Las fotografías ahora ocupan un área mucho mayor dentro de cada tarjeta.
+- Se mantiene una sola fotografía representativa por categoría.
+- Todas las tarjetas conservan una altura y distribución visual uniforme.
+- Se mantiene la navegación directa hacia la sección Productos.
+- No se muestran tablas detalladas en la página principal.
 
 Publicación:
 1. Descomprima el ZIP.
-2. Reemplace los archivos del repositorio local strategyvmk.github.io.
-3. Realice Commit to main.
-4. Luego seleccione Push origin.
+2. Copie y reemplace todos los archivos dentro del repositorio local strategyvmk.github.io.
+3. En GitHub Desktop escriba el Summary.
+4. Haga Commit to main y luego Push origin.
