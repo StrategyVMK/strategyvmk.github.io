@@ -1,9 +1,15 @@
-STRATEGY VMK — WEB V6.3 CONTACTO PREMIUM
+STRATEGY VMK — WEB V7.0 NAVEGACIÓN PREMIUM
 
-- Fotografía corporativa profesional en la sección de contacto.
-- Eliminación del recuadro blanco duplicado.
-- Panel integrado con RUC, razón social, dirección, contacto, teléfonos y correos.
-- Mayor tamaño y contraste de textos.
-- Diseño responsive.
+Mejoras incorporadas:
+- Nuevo botón Inicio en el menú principal.
+- El logotipo regresa al inicio de la página.
+- Botón flotante para volver arriba.
+- Desplazamiento suave.
+- El botón flotante aparece únicamente cuando el usuario ha bajado en la página.
+- Se mantiene la sección de contacto premium de la versión anterior.
 
-Publicación: reemplace los archivos del repositorio local, realice Commit to main y luego Push origin.
+Publicación:
+1. Descomprima el archivo ZIP.
+2. Reemplace los archivos del repositorio local strategyvmk.github.io.
+3. Realice Commit to main.
+4. Luego seleccione Push origin.
