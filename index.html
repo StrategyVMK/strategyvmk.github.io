@@ -14,6 +14,22 @@ p,li,a,span{font-size:1.05rem!important;color:#374151!important}
 .small,.text-small,.muted{font-size:1rem!important;color:#374151!important}
 .company-contact{background:#f7f9fc;border:1px solid #d7e3f4;border-radius:12px;padding:18px;margin:24px 0}
 </style>
+
+<style>
+.contact-visual{overflow:hidden;border-radius:18px;min-height:360px;background:#071f3d;box-shadow:0 20px 50px rgba(2,18,40,.28)}
+.contact-visual img{width:100%;height:100%;min-height:360px;object-fit:cover;display:block}
+.corporate-info-panel{padding:34px clamp(18px,4vw,56px) 38px;background:radial-gradient(circle at 85% 15%,rgba(232,33,125,.28),transparent 34%),linear-gradient(120deg,#06224a 0%,#0a3470 42%,#3a185e 100%);color:#fff}
+.corporate-info-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1.08fr 1.15fr 1fr .9fr 1.15fr;border:1px solid rgba(255,255,255,.20);border-radius:22px;overflow:hidden;background:rgba(3,19,49,.46);box-shadow:0 20px 55px rgba(0,0,0,.22)}
+.corporate-info-item{display:flex;gap:15px;padding:28px 22px;border-right:1px solid rgba(255,255,255,.20);min-height:210px}
+.corporate-info-item:last-child{border-right:none}
+.corporate-icon{flex:0 0 46px;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#ff2a8c,#c30d68);color:white;font-size:24px;font-weight:800}
+.corporate-info-item h3{margin:3px 0 20px;color:#fff!important;font-size:1.08rem!important;text-transform:uppercase}
+.corporate-info-item p,.corporate-info-item a{color:#f8fbff!important;font-size:1rem!important;line-height:1.55;text-decoration:none;overflow-wrap:anywhere}
+.corporate-info-item strong{color:#ff4ba0}.contact-name{font-size:1.55rem!important;font-weight:800;margin:0 0 4px!important}.contact-role{color:#ff4ba0!important;font-style:italic;font-weight:700;margin-top:0!important}
+@media(max-width:1100px){.corporate-info-grid{grid-template-columns:repeat(2,1fr)}.corporate-info-item:nth-child(2n){border-right:none}.corporate-info-item:last-child{grid-column:1/-1}}
+@media(max-width:680px){.contact-visual,.contact-visual img{min-height:260px}.corporate-info-grid{grid-template-columns:1fr}.corporate-info-item{border-right:none;min-height:auto;padding:22px 18px}.corporate-info-item:last-child{grid-column:auto}}
+</style>
+
 </head>
 <body>
 <div class="topbar"><div class="container topbar-inner"><span>Agencia BTL y Marketing Outsourcing · Lima, Perú</span><div><a href="tel:+51997164811">997 164 811</a><i>·</i><a href="mailto:vcanassa@gmail.com">vcanassa@gmail.com</a></div></div></div>
@@ -75,17 +91,46 @@ p,li,a,span{font-size:1.05rem!important;color:#374151!important}
   </div>
 </div></section>
 <section id="proceso" class="section process"><div class="container section-head"><div><p class="eyebrow dark">CÓMO TRABAJAMOS</p><h2>Un proceso simple y controlado.</h2></div></div><div class="container steps"><article><b>1</b><h3>Escuchamos</h3><p>Conocemos el objetivo, público, plazo y alcance.</p></article><article><b>2</b><h3>Diseñamos</h3><p>Preparamos la propuesta creativa, técnica y económica.</p></article><article><b>3</b><h3>Producimos</h3><p>Coordinamos personal, materiales y logística.</p></article><article><b>4</b><h3>Ejecutamos</h3><p>Implementamos y supervisamos la campaña.</p></article><article><b>5</b><h3>Reportamos</h3><p>Entregamos evidencias y conclusiones de la acción.</p></article></div></section>
-<section id="contacto" class="contact"><div class="container contact-grid"><div><p class="eyebrow">HABLEMOS DE SU PRÓXIMA CAMPAÑA</p><h2>Convirtamos una necesidad comercial en una experiencia de marca.</h2><p>Cuéntenos qué necesita. Prepararemos una primera orientación y organizaremos la información para atenderlo con mayor rapidez.</p><button class="btn btn-accent open-assistant">Iniciar solicitud</button></div><aside><h3>Strategy VMK</h3><p>Agencia BTL y Marketing Outsourcing</p><a href="tel:+51997164811">997 164 811</a><a href="mailto:vcanassa@gmail.com">vcanassa@gmail.com</a><span>Lima, Perú · Cobertura nacional</span></aside></div></section>
+<section id="contacto" class="contact"><div class="container contact-grid"><div><p class="eyebrow">HABLEMOS DE SU PRÓXIMA CAMPAÑA</p><h2>Convirtamos una necesidad comercial en una experiencia de marca.</h2><p>Cuéntenos qué necesita. Prepararemos una primera orientación y organizaremos la información para atenderlo con mayor rapidez.</p><button class="btn btn-accent open-assistant">Iniciar solicitud</button></div><aside class="contact-visual">
+<img src="assets/img/equipo-corporativo-strategy-vmk.jpg" alt="Equipo corporativo Strategy VMK" loading="lazy">
+</aside></div></section>
 </main>
+
+<section class="corporate-info-panel">
+  <div class="corporate-info-grid">
+    <article class="corporate-info-item">
+      <span class="corporate-icon">▦</span><div>
+      <h3>Información empresarial</h3>
+      <p><strong>RUC:</strong> 20600141521</p>
+      <p><strong>Razón social:</strong><br>VMK ESTRATEGY E.I.R.L.</p></div>
+    </article>
+    <article class="corporate-info-item">
+      <span class="corporate-icon">⌖</span><div>
+      <h3>Dirección fiscal</h3>
+      <p>Av. Amancaes 730 Int. 2<br>(Altura Club Sporting Cristal)<br>Rímac, Lima - Perú</p></div>
+    </article>
+    <article class="corporate-info-item">
+      <span class="corporate-icon">●</span><div>
+      <h3>Contacto comercial</h3>
+      <p class="contact-name">Vanessa Carassa</p>
+      <p class="contact-role">Ejecutiva Comercial</p></div>
+    </article>
+    <article class="corporate-info-item">
+      <span class="corporate-icon">☎</span><div>
+      <h3>Teléfonos</h3>
+      <p><a href="https://wa.me/51944246463">944 246 463</a></p>
+      <p><a href="https://wa.me/51997164811">997 164 811</a></p></div>
+    </article>
+    <article class="corporate-info-item">
+      <span class="corporate-icon">✉</span><div>
+      <h3>Correos</h3>
+      <p><a href="mailto:vcarassa@gmail.com">vcarassa@gmail.com</a></p>
+      <p><a href="mailto:g.merchandising.peru@gmail.com">g.merchandising.peru@gmail.com</a></p></div>
+    </article>
+  </div>
+</section>
+
 <footer><div class="container footer-inner"><div class="brand footer-brand"><img src="assets/img/strategy-vmk-logo.png" alt="Strategy VMK"><div><strong>Strategy VMK</strong><span>Agencia integral BTL</span></div></div><p>© 2026 VMK ESTRATEGY E.I.R.L. · RUC 20600141521. Todos los derechos reservados.</p><a href="#inicio">Volver arriba ↑</a></div>
-<div class="company-contact">
-<h3>VMK ESTRATEGY E.I.R.L.</h3>
-<p><strong>RUC:</strong> 20600141521</p>
-<p><strong>Dirección:</strong> Av. Amancaes 730 Int. 2 (Altura Club Sporting Cristal), Rímac, Lima - Perú</p>
-<p><strong>Contacto:</strong> Vanessa Carassa</p>
-<p><strong>Celulares:</strong> 944 246 463 / 997 164 811</p>
-<p><strong>Correos:</strong> vcarassa@gmail.com<br>g.merchandising.peru@gmail.com</p>
-</div>
 </footer>
 <button class="wa open-assistant" aria-label="Solicitar propuesta por WhatsApp">WA</button>
 <div class="modal" id="assistant" aria-hidden="true"><div class="modal-card"><button class="close" aria-label="Cerrar">×</button><p class="eyebrow dark">ASISTENTE COMERCIAL</p><h2>Solicite una propuesta</h2><p>Complete estos datos y generaremos un mensaje organizado para WhatsApp.</p><form id="quoteForm"><label>Nombre y apellido<input name="nombre" required></label><label>Empresa<input name="empresa"></label><label>Servicio<select name="servicio" required><option value="">Seleccione</option><option>Activación BTL</option><option>Trade Marketing</option><option>Personal promocional</option><option>Evento corporativo</option><option>Merchandising</option><option>Pendrives personalizables</option><option>Accesorios tecnológicos</option><option>Material POP</option><option>Producción gráfica</option><option>Otro requerimiento</option></select></label><label>Ciudad<input name="ciudad" value="Lima"></label><label>Cuéntenos brevemente qué necesita<textarea name="detalle" rows="4" required></textarea></label><button class="btn btn-accent" type="submit">Continuar por WhatsApp</button></form></div></div>

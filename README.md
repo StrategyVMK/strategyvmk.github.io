@@ -1,14 +1,9 @@
-STRATEGY VMK — WEB V6.1 DATOS EMPRESARIALES
+STRATEGY VMK — WEB V6.3 CONTACTO PREMIUM
 
-Versión actualizada del sitio web corporativo.
+- Fotografía corporativa profesional en la sección de contacto.
+- Eliminación del recuadro blanco duplicado.
+- Panel integrado con RUC, razón social, dirección, contacto, teléfonos y correos.
+- Mayor tamaño y contraste de textos.
+- Diseño responsive.
 
-Datos incorporados:
-- RUC: 20600141521
-- Razón fiscal: VMK ESTRATEGY E.I.R.L.
-- Dirección: Av. Amancaes 730 Int. 2, Rímac, Lima
-- Referencia: Altura Club Sporting Cristal
-- Móvil: 997 164 811
-
-Publicación:
-Reemplace los archivos del repositorio local strategyvmk.github.io por los de esta versión,
-realice Commit to main y luego Push origin desde GitHub Desktop.
+Publicación: reemplace los archivos del repositorio local, realice Commit to main y luego Push origin.
