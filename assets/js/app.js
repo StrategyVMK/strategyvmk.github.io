@@ -4,4 +4,4 @@ Nombre: ${d.get('nombre')}
 Empresa: ${d.get('empresa')||'No indicada'}
 Servicio: ${d.get('servicio')}
 Ciudad: ${d.get('ciudad')}
-Requerimiento: ${d.get('detalle')}`;window.open('https://wa.me/51944246463?text='+encodeURIComponent(msg),'_blank')});const menuBtn=document.querySelector('.menu-btn'),nav=document.querySelector('nav');menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+Requerimiento: ${d.get('detalle')}`;window.open('https://wa.me/51997164811?text='+encodeURIComponent(msg),'_blank')});const menuBtn=document.querySelector('.menu-btn'),nav=document.querySelector('nav');menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
