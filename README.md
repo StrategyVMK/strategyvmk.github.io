@@ -1,15 +1,17 @@
-STRATEGY VMK — WEB V7.0 NAVEGACIÓN PREMIUM
+STRATEGY VMK — WEB V7.1 NAVEGACIÓN CORREGIDA
 
-Mejoras incorporadas:
-- Nuevo botón Inicio en el menú principal.
-- El logotipo regresa al inicio de la página.
+Esta versión se construyó sobre la V6.3 aprobada.
+
+Cambios:
+- Botón Inicio agregado al menú principal.
+- El logo permite volver al inicio sin modificar su tamaño ni posición.
 - Botón flotante para volver arriba.
 - Desplazamiento suave.
-- El botón flotante aparece únicamente cuando el usuario ha bajado en la página.
-- Se mantiene la sección de contacto premium de la versión anterior.
+- Se mantiene intacto el diseño visual del encabezado.
+- Se mantiene la sección de contacto premium.
 
 Publicación:
-1. Descomprima el archivo ZIP.
+1. Descomprima el ZIP.
 2. Reemplace los archivos del repositorio local strategyvmk.github.io.
 3. Realice Commit to main.
 4. Luego seleccione Push origin.

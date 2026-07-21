@@ -33,43 +33,36 @@ p,li,a,span{font-size:1.05rem!important;color:#374151!important}
 
 <style>
 html{scroll-behavior:smooth}
-.brand-home{display:inline-flex;align-items:center;text-decoration:none}
+.js-home-brand{cursor:pointer}
 .back-to-top{
   position:fixed;
   right:24px;
   bottom:92px;
-  width:48px;
-  height:48px;
+  width:46px;
+  height:46px;
   border:0;
   border-radius:50%;
-  background:linear-gradient(135deg,#0d3154,#071f39);
+  background:#0b2e4c;
   color:#fff;
-  font-size:25px;
+  font-size:24px;
   font-weight:800;
+  line-height:1;
   cursor:pointer;
-  box-shadow:0 12px 28px rgba(0,0,0,.28);
+  box-shadow:0 10px 24px rgba(0,0,0,.25);
   opacity:0;
   visibility:hidden;
-  transform:translateY(12px);
-  transition:opacity .25s ease,transform .25s ease,visibility .25s ease,background .25s ease;
+  transform:translateY(10px);
+  transition:opacity .25s ease,transform .25s ease,visibility .25s ease,background .2s ease;
   z-index:9998;
 }
-.back-to-top:hover{
-  background:linear-gradient(135deg,#d31273,#ff2e93);
-  transform:translateY(-2px);
-}
+.back-to-top:hover{background:#d31373}
 .back-to-top.is-visible{
   opacity:1;
   visibility:visible;
   transform:translateY(0);
 }
 @media(max-width:680px){
-  .back-to-top{
-    right:18px;
-    bottom:86px;
-    width:44px;
-    height:44px;
-  }
+  .back-to-top{right:18px;bottom:86px;width:42px;height:42px;font-size:22px}
 }
 </style>
 
@@ -77,7 +70,7 @@ html{scroll-behavior:smooth}
 <body>
 <div class="topbar"><div class="container topbar-inner"><span>Agencia BTL y Marketing Outsourcing · Lima, Perú</span><div><a href="tel:+51997164811">997 164 811</a><i>·</i><a href="mailto:vcanassa@gmail.com">vcanassa@gmail.com</a></div></div></div>
 <header class="header"><div class="container nav-wrap">
-<a class="brand" href="#inicio"><a href="#inicio" class="brand-home" aria-label="Volver al inicio"><img src="assets/img/strategy-vmk-logo.png" alt="Strategy VMK"></a><div><strong>Strategy VMK</strong><span>Agencia integral BTL</span></div></a>
+<a class="brand" href="#inicio"><img src="assets/img/strategy-vmk-logo.png" alt="Strategy VMK"><div><strong>Strategy VMK</strong><span>Agencia integral BTL</span></div></a>
 <button class="menu-btn" aria-label="Abrir menú">☰</button>
 <nav><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#portafolio">Portafolio</a><a href="#productos">Productos</a><a href="#proceso">Cómo trabajamos</a><a href="#contacto">Contacto</a></nav>
 <button class="btn btn-dark open-assistant">Solicitar propuesta</button>
@@ -173,44 +166,56 @@ html{scroll-behavior:smooth}
   </div>
 </section>
 
-<footer><div class="container footer-inner"><div class="brand footer-brand"><img src="assets/img/strategy-vmk-logo.png" alt="Strategy VMK"><div><strong>Strategy VMK</strong><span>Agencia integral BTL</span></div></div><p>© 2026 VMK ESTRATEGY E.I.R.L. · RUC 20600141521. Todos los derechos reservados.</p><a href="#inicio">Volver arriba ↑</a></div>
+<footer><div class="container footer-inner"><div class="js-home-brand brand footer-brand"><img src="assets/img/strategy-vmk-logo.png" alt="Strategy VMK"><div><strong>Strategy VMK</strong><span>Agencia integral BTL</span></div></div><p>© 2026 VMK ESTRATEGY E.I.R.L. · RUC 20600141521. Todos los derechos reservados.</p><a href="#inicio">Volver arriba ↑</a></div>
 </footer>
 <button class="wa open-assistant" aria-label="Solicitar propuesta por WhatsApp">WA</button>
 <div class="modal" id="assistant" aria-hidden="true"><div class="modal-card"><button class="close" aria-label="Cerrar">×</button><p class="eyebrow dark">ASISTENTE COMERCIAL</p><h2>Solicite una propuesta</h2><p>Complete estos datos y generaremos un mensaje organizado para WhatsApp.</p><form id="quoteForm"><label>Nombre y apellido<input name="nombre" required></label><label>Empresa<input name="empresa"></label><label>Servicio<select name="servicio" required><option value="">Seleccione</option><option>Activación BTL</option><option>Trade Marketing</option><option>Personal promocional</option><option>Evento corporativo</option><option>Merchandising</option><option>Pendrives personalizables</option><option>Accesorios tecnológicos</option><option>Material POP</option><option>Producción gráfica</option><option>Otro requerimiento</option></select></label><label>Ciudad<input name="ciudad" value="Lima"></label><label>Cuéntenos brevemente qué necesita<textarea name="detalle" rows="4" required></textarea></label><button class="btn btn-accent" type="submit">Continuar por WhatsApp</button></form></div></div>
 <script src="assets/js/app.js"></script>
-
-<button id="backToTop" class="back-to-top" type="button" aria-label="Volver al inicio" title="Volver al inicio">
-  ↑
-</button>
-
+<button id="backToTop" class="back-to-top" type="button" aria-label="Volver al inicio" title="Volver al inicio">↑</button>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const backToTop = document.getElementById("backToTop");
+  const goHome = function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (history.replaceState) {
+      history.replaceState(null, "", window.location.pathname + window.location.search);
+    }
+  };
 
-  const toggleBackToTop = () => {
-    if (!backToTop) return;
-    backToTop.classList.toggle("is-visible", window.scrollY > 320);
+  document.querySelectorAll('a[href="#inicio"]').forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      goHome();
+    });
+  });
+
+  const brand = document.querySelector(".js-home-brand");
+  if (brand) {
+    brand.setAttribute("role", "button");
+    brand.setAttribute("tabindex", "0");
+    brand.setAttribute("aria-label", "Volver al inicio");
+    brand.addEventListener("click", goHome);
+    brand.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        goHome();
+      }
+    });
+  }
+
+  const backToTop = document.getElementById("backToTop");
+  const toggleBackToTop = function () {
+    if (backToTop) {
+      backToTop.classList.toggle("is-visible", window.scrollY > 320);
+    }
   };
 
   window.addEventListener("scroll", toggleBackToTop, { passive: true });
   toggleBackToTop();
 
   if (backToTop) {
-    backToTop.addEventListener("click", function () {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
+    backToTop.addEventListener("click", goHome);
   }
-
-  document.querySelectorAll('a[href="#inicio"]').forEach(function(link){
-    link.addEventListener("click", function(event){
-      event.preventDefault();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-      if (history.replaceState) {
-        history.replaceState(null, "", window.location.pathname + window.location.search);
-      }
-    });
-  });
 });
 </script>
 
