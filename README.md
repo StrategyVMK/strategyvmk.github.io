@@ -1,15 +1,16 @@
-STRATEGY VMK — WEB V8.2 IMÁGENES AMPLIADAS
+STRATEGY VMK — WEB V8.3 CLIENTES CORPORATIVOS
 
 Cambios realizados:
-- Se reemplazaron las fotografías de las siete nuevas categorías por las imágenes proporcionadas.
-- Las fotografías ahora ocupan un área mucho mayor dentro de cada tarjeta.
-- Se mantiene una sola fotografía representativa por categoría.
-- Todas las tarjetas conservan una altura y distribución visual uniforme.
-- Se mantiene la navegación directa hacia la sección Productos.
-- No se muestran tablas detalladas en la página principal.
+- Se incorporó la nueva sección “Clientes atendidos”.
+- Se agregó “Clientes” al menú principal.
+- Se integraron los logotipos y descripciones de:
+  Asia Asesores de Seguros, Grünenthal, Exeltis, HeyMome, SENATI,
+  Suiza Lab, Dropesac, Radisson y VITIS.
+- Los clientes se muestran en tarjetas corporativas uniformes y adaptables a móviles.
+- Se conservaron todos los cambios aprobados de la V8.2.
 
 Publicación:
 1. Descomprima el ZIP.
 2. Copie y reemplace todos los archivos dentro del repositorio local strategyvmk.github.io.
-3. En GitHub Desktop escriba el Summary.
-4. Haga Commit to main y luego Push origin.
+3. En GitHub Desktop realice Commit to main.
+4. Luego seleccione Push origin.

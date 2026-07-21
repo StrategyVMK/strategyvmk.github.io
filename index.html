@@ -100,13 +100,79 @@ html{scroll-behavior:smooth}
 }
 </style>
 
+
+<style>
+.clients-section{background:#f7f9fb}
+.clients-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:22px;
+}
+.client-card{
+  background:#fff;
+  border:1px solid #dde5ea;
+  border-radius:18px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  min-height:390px;
+  transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;
+}
+.client-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 42px rgba(2,18,40,.13);
+  border-color:#cbd6dd;
+}
+.client-logo{
+  height:190px;
+  padding:22px;
+  background:#fff;
+  border-bottom:1px solid #edf1f4;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.client-logo img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+.client-copy{padding:22px 22px 26px}
+.client-copy h3{
+  margin:0 0 10px;
+  font-size:1.15rem;
+  color:#0b2e4c;
+}
+.client-copy p{
+  margin:0;
+  line-height:1.55;
+  color:#586773;
+}
+.clients-note{
+  margin-top:26px;
+  padding:18px 22px;
+  border-left:4px solid #d31373;
+  background:#fff;
+  border-radius:0 12px 12px 0;
+}
+.clients-note p{margin:0;color:#586773;line-height:1.55}
+@media(max-width:900px){
+  .clients-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:620px){
+  .clients-grid{grid-template-columns:1fr}
+  .client-card{min-height:auto}
+  .client-logo{height:175px}
+}
+</style>
+
 </head>
 <body>
 <div class="topbar"><div class="container topbar-inner"><span>Agencia BTL y Marketing Outsourcing · Lima, Perú</span><div><a href="tel:+51997164811">997 164 811</a><i>·</i><a href="mailto:vcarassa@gmail.com">vcarassa@gmail.com</a></div></div></div>
 <header class="header"><div class="container nav-wrap">
 <a class="brand" href="#inicio"><img src="assets/img/strategy-vmk-logo.png" alt="Strategy VMK"><div><strong>Strategy VMK</strong><span>Agencia integral BTL</span></div></a>
 <button class="menu-btn" aria-label="Abrir menú">☰</button>
-<nav><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#portafolio">Portafolio</a><a href="#productos">Productos</a><a href="#proceso">Cómo trabajamos</a><a href="#contacto">Contacto</a></nav>
+<nav><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a><a href="#portafolio">Portafolio</a><a href="#clientes">Clientes</a><a href="#productos">Productos</a><a href="#proceso">Cómo trabajamos</a><a href="#contacto">Contacto</a></nav>
 <button class="btn btn-dark open-assistant">Solicitar propuesta</button>
 </div></header>
 <main>
@@ -138,6 +204,58 @@ html{scroll-behavior:smooth}
 <article><img src="https://images.pexels.com/photos/36799143/pexels-photo-36799143.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Atención en stand "><div><span>Activaciones</span><h3>Interacción directa con el consumidor</h3></div></article>
 <article><img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Equipo de marketing "><div><span>Coordinación</span><h3>Equipos alineados con cada campaña</h3></div></article>
 </div></section>
+
+<section id="clientes" class="section clients-section">
+  <div class="container section-head">
+    <div>
+      <p class="eyebrow dark">CLIENTES ATENDIDOS</p>
+      <h2>Empresas que han confiado en Strategy VMK.</h2>
+    </div>
+    <p>Experiencia desarrollando soluciones BTL, merchandising corporativo y acciones promocionales para organizaciones de distintos sectores.</p>
+  </div>
+  <div class="container clients-grid">
+    <article class="client-card">
+      <div class="client-logo"><img src="assets/img/clientes/asia.png" alt="Logo de Asia Asesores de Seguros"></div>
+      <div class="client-copy"><h3>Asia Asesores de Seguros</h3><p>Asesoría especializada en seguros para personas y empresas.</p></div>
+    </article>
+<article class="client-card">
+      <div class="client-logo"><img src="assets/img/clientes/grunenthal.png" alt="Logo de Grünenthal"></div>
+      <div class="client-copy"><h3>Grünenthal</h3><p>Investigación, desarrollo y comercialización de medicamentos.</p></div>
+    </article>
+<article class="client-card">
+      <div class="client-logo"><img src="assets/img/clientes/exeltis.png" alt="Logo de Exeltis"></div>
+      <div class="client-copy"><h3>Exeltis</h3><p>Laboratorio farmacéutico especializado en salud femenina e investigación médica.</p></div>
+    </article>
+<article class="client-card">
+      <div class="client-logo"><img src="assets/img/clientes/heymome.png" alt="Logo de HeyMome"></div>
+      <div class="client-copy"><h3>HeyMome</h3><p>Consultora creativa y agencia de publicidad con sede en Lima, Perú.</p></div>
+    </article>
+<article class="client-card">
+      <div class="client-logo"><img src="assets/img/clientes/senati.png" alt="Logo de SENATI"></div>
+      <div class="client-copy"><h3>SENATI</h3><p>Formación y capacitación profesional para actividades industriales.</p></div>
+    </article>
+<article class="client-card">
+      <div class="client-logo"><img src="assets/img/clientes/suiza-lab.png" alt="Logo de Suiza Lab"></div>
+      <div class="client-copy"><h3>Suiza Lab</h3><p>Centro médico integral especializado en prevención, diagnóstico y atención médica.</p></div>
+    </article>
+<article class="client-card">
+      <div class="client-logo"><img src="assets/img/clientes/dropesac.png" alt="Logo de Dropesac"></div>
+      <div class="client-copy"><h3>Dropesac</h3><p>Importación, almacenamiento y distribución nacional de productos farmacéuticos, dispositivos médicos y afines.</p></div>
+    </article>
+<article class="client-card">
+      <div class="client-logo"><img src="assets/img/clientes/radisson.png" alt="Logo de Radisson"></div>
+      <div class="client-copy"><h3>Radisson</h3><p>Cadena internacional de hoteles de servicio completo.</p></div>
+    </article>
+<article class="client-card">
+      <div class="client-logo"><img src="assets/img/clientes/vitis.png" alt="Logo de VITIS"></div>
+      <div class="client-copy"><h3>VITIS</h3><p>Marca especializada en salud y cuidado bucodental.</p></div>
+    </article>
+  </div>
+  <div class="container clients-note">
+    <p>Las marcas mostradas corresponden a empresas atendidas mediante proyectos, campañas o soluciones promocionales desarrolladas por Strategy VMK.</p>
+  </div>
+</section>
+
 <section id="productos" class="section products"><div class="container section-head"><div><p class="eyebrow dark">MERCHANDISING CORPORATIVO</p><h2>Productos que mantienen su marca presente.</h2></div><p>Una selección organizada por usos y categorías. Podemos personalizar cada propuesta según presupuesto, público y objetivo.</p></div>
 <div class="container product-grid product-grid-expanded">
 <article><img src="assets/img/tomatodos.jpg" alt="Tomatodos y termos personalizables"><div><span>Hidratación</span><h3>Tomatodos y termos</h3></div></article>
