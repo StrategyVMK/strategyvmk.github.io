@@ -338,6 +338,35 @@ html{scroll-behavior:smooth}
 }
 </style>
 
+
+<style>
+/* V9.1 Accessibility */
+.hero p,.hero li,.hero .benefits span,.hero-copy p{
+ color:#fff !important;
+ text-shadow:0 2px 6px rgba(0,0,0,.7)!important;
+ opacity:1!important;
+}
+.hero .eyebrow{
+ color:#ff7fbf!important;
+ font-weight:800!important;
+ text-shadow:0 2px 6px rgba(0,0,0,.7)!important;
+}
+.hero::before{
+ content:"";
+ position:absolute;
+ inset:0;
+ background:linear-gradient(90deg,rgba(3,20,38,.78),rgba(3,20,38,.52) 60%,rgba(3,20,38,.18));
+ pointer-events:none;
+}
+.hero>*{position:relative;z-index:1;}
+.corporate-info-item p,
+.corporate-info-item a,
+.corporate-info-item strong{
+ color:#fff!important;
+ opacity:1!important;
+}
+</style>
+
 </head>
 <body>
 <div class="topbar"><div class="container topbar-inner"><span>Agencia BTL y Marketing Outsourcing · Lima, Perú</span><div><a href="tel:+51997164811">997 164 811</a><i>·</i><a href="mailto:vcarassa@gmail.com">vcarassa@gmail.com</a></div></div></div>
