@@ -18,3 +18,219 @@
 @media(max-width:1180px){.product-grid-expanded{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:900px){.product-grid-expanded{grid-template-columns:repeat(2,1fr)}.benefit-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:580px){.product-grid-expanded{grid-template-columns:1fr}.product-grid-expanded img{height:300px}.benefit-grid{grid-template-columns:1fr}.benefit-band{margin-top:50px}}
+
+
+/* =========================================================
+   STRATEGY VMK V10.0 — PREMIUM
+   Corrección definitiva de contraste + refinamiento visual
+   ========================================================= */
+
+:root{
+  --navy:#071f30;
+  --navy-2:#0e3047;
+  --pink:#cf1675;
+  --pink-soft:#ff77b8;
+  --ink:#102538;
+  --muted:#5b6a75;
+  --line:#e4eaee;
+  --surface:#f7f9fb;
+}
+
+/* Legibilidad global sin afectar textos claros sobre fondos oscuros */
+body{font-size:17px;line-height:1.65}
+.section p,.section li{color:var(--muted)}
+.section h2,.section h3{color:var(--ink)}
+a{transition:color .18s ease,opacity .18s ease}
+
+/* Barra superior */
+.topbar,.topbar a,.topbar span,.topbar i{
+  color:#fff!important;
+  opacity:1!important;
+}
+.topbar{background:#061c2d}
+
+/* Encabezado */
+.header{box-shadow:0 5px 20px rgba(4,25,40,.06)}
+.nav-wrap nav a{font-size:.9rem!important;color:#173149!important}
+.nav-wrap nav a:hover{color:var(--pink)!important}
+.brand strong{font-size:1.06rem!important;color:#102538!important}
+.brand span{font-size:.72rem!important;color:#5f6e79!important}
+
+/* Hero: máxima claridad */
+.hero{isolation:isolate}
+.hero-overlay{
+  background:linear-gradient(
+    90deg,
+    rgba(2,18,34,.96) 0%,
+    rgba(2,22,40,.88) 45%,
+    rgba(2,22,40,.56) 72%,
+    rgba(2,22,40,.25) 100%
+  )!important;
+}
+.hero::before{display:none!important}
+.hero-copy,.hero-panel{position:relative;z-index:2}
+.hero .eyebrow{
+  color:var(--pink-soft)!important;
+  opacity:1!important;
+  font-size:.88rem!important;
+  font-weight:800!important;
+  letter-spacing:.13em!important;
+  text-shadow:0 2px 5px rgba(0,0,0,.55)!important;
+}
+.hero h1{color:#fff!important;text-shadow:0 3px 12px rgba(0,0,0,.32)}
+.hero h1 em{color:#ff73b6!important}
+.hero .lead{
+  color:#fff!important;
+  opacity:1!important;
+  font-size:1.08rem!important;
+  line-height:1.72!important;
+  font-weight:500!important;
+  text-shadow:0 2px 6px rgba(0,0,0,.7)!important;
+}
+.hero .trust{
+  display:grid!important;
+  grid-template-columns:repeat(3,max-content);
+  gap:18px 30px!important;
+}
+.hero .trust span{
+  color:#fff!important;
+  opacity:1!important;
+  font-size:.95rem!important;
+  font-weight:700!important;
+  text-shadow:0 2px 6px rgba(0,0,0,.75)!important;
+}
+.hero .trust span:before{color:#ff61ae!important}
+.hero-panel{
+  border-top:5px solid var(--pink)!important;
+  box-shadow:0 26px 70px rgba(0,0,0,.32)!important;
+}
+.hero-panel,.hero-panel li,.hero-panel h2{
+  color:var(--ink)!important;
+  text-shadow:none!important;
+}
+.hero-panel .panel-kicker,.hero-panel a{color:#a91969!important}
+
+/* Botones */
+.btn{transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-accent{
+  background:linear-gradient(135deg,#d31373,#b61e75)!important;
+  color:#fff!important;
+  box-shadow:0 12px 28px rgba(207,19,115,.25)
+}
+.btn-accent:hover{box-shadow:0 16px 36px rgba(207,19,115,.36);filter:brightness(1.05)}
+.btn-dark{color:#fff!important}
+
+/* Tarjetas */
+.value-grid article,.service,.product-grid article,.client-card{
+  transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;
+}
+.value-grid article:hover,.service:hover,.product-grid article:hover,.client-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 18px 42px rgba(4,31,48,.12);
+  border-color:#d1dbe1;
+}
+
+/* Portfolio */
+.portfolio .section-head h2,.portfolio .section-head p,
+.portfolio-grid h3{color:#fff!important}
+.portfolio .eyebrow{color:var(--pink-soft)!important}
+.portfolio-grid article div span{color:#ff85c2!important}
+
+/* Clientes */
+.clients-section{background:linear-gradient(180deg,#f8fafc,#f3f7fa)!important}
+.client-copy h3{color:#0d3048!important}
+.client-copy p{color:#586773!important}
+
+/* Productos */
+.products .section-head h2{color:var(--ink)!important}
+.category-card p{color:#586773!important}
+.benefit-band h4,.benefit-band p{
+  color:#fff!important;
+  opacity:1!important;
+}
+.benefit-band p{color:#dfeaf0!important}
+
+/* Contacto */
+#contacto.contact{
+  background:
+    radial-gradient(circle at 82% 16%,rgba(34,105,154,.28),transparent 34%),
+    linear-gradient(135deg,#06243e 0%,#093452 58%,#062238 100%)!important;
+}
+#contacto .eyebrow{
+  color:#a9dcff!important;
+  opacity:1!important;
+  font-size:.9rem!important;
+  font-weight:800!important;
+  text-shadow:0 2px 5px rgba(0,0,0,.38)!important;
+}
+#contacto h2{
+  color:#fff!important;
+  text-shadow:0 3px 10px rgba(0,0,0,.24)!important;
+}
+#contacto .contact-grid > div > p:not(.eyebrow){
+  color:#fff!important;
+  opacity:1!important;
+  font-size:1.06rem!important;
+  line-height:1.75!important;
+  font-weight:500!important;
+  text-shadow:0 2px 5px rgba(0,0,0,.38)!important;
+}
+#contacto .contact-visual{
+  border:5px solid #fff!important;
+  border-radius:22px!important;
+  box-shadow:0 28px 65px rgba(0,0,0,.34)!important;
+}
+
+/* Información corporativa */
+.corporate-info-panel{border-top:1px solid rgba(255,255,255,.22)}
+.corporate-info-item h3,
+.corporate-info-item p,
+.corporate-info-item a{
+  color:#fff!important;
+  opacity:1!important;
+}
+.corporate-info-item strong,.contact-role{color:#ff73b6!important}
+.contact-name{color:#fff!important}
+
+/* Footer */
+footer,footer p,footer a,footer span,footer strong{color:#fff!important}
+footer a:hover{color:#ff73b6!important}
+
+/* Móviles */
+@media(max-width:900px){
+  .hero .trust{grid-template-columns:1fr!important}
+  .hero .lead{font-size:1rem!important}
+}
+@media(max-width:580px){
+  .hero h1{font-size:2.55rem!important;line-height:1.04!important}
+  .hero .eyebrow{font-size:.76rem!important}
+  .hero .lead{font-size:.98rem!important}
+}
+
+
+/* V11.0 — Nuevo logotipo corporativo VMK */
+.brand img{
+  width:112px!important;
+  height:82px!important;
+  object-fit:contain!important;
+  margin-right:16px!important;
+}
+.footer-brand img{
+  width:82px!important;
+  height:62px!important;
+  object-fit:contain!important;
+}
+@media(max-width:900px){
+  .brand img{
+    width:88px!important;
+    height:66px!important;
+  }
+}
+@media(max-width:580px){
+  .brand img{
+    width:74px!important;
+    height:58px!important;
+  }
+}
+

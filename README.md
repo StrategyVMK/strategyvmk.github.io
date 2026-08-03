@@ -1,16 +1,15 @@
-STRATEGY VMK — WEB V9.1 ACCESIBILIDAD
+STRATEGY VMK — WEB V10.1 LOGO Y PORTAFOLIO
 
-Correcciones:
-- Se aumentó el contraste de los textos del hero principal.
-- Se corrigieron los beneficios inferiores que se veían demasiado oscuros.
-- Se reforzó el color blanco en párrafos sobre fondos oscuros.
-- Se mejoró el subtítulo en color rosado.
-- Se oscureció ligeramente la superposición de fondo para facilitar la lectura.
-- Se reforzó la legibilidad de la sección Contacto y del panel corporativo.
-- Se mantuvieron todos los contenidos, productos y clientes de la versión anterior.
+Cambios conservados y aplicados:
+- Se mantiene el nuevo logotipo incluido en el ZIP entregado.
+- Se conserva el nuevo texto del Portafolio:
+  "Cada proyecto refleja nuestro compromiso con la creatividad, la calidad y la ejecución impecable."
+- Se mantiene el color claro y el contraste necesario para que el párrafo sea legible sobre el fondo azul oscuro.
+- Se conserva el resto del proyecto sin cambios.
 
 Publicación:
 1. Descomprima el ZIP.
-2. Copie y reemplace todos los archivos dentro del repositorio local strategyvmk.github.io.
-3. En GitHub Desktop realice Commit to main.
-4. Luego seleccione Push origin.
+2. Copie todos los archivos en Documentos/GitHub/strategyvmk.github.io.
+3. Reemplace los archivos existentes.
+4. En GitHub Desktop realice Commit to main.
+5. Luego seleccione Push origin.
