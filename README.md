@@ -1,19 +1,13 @@
-STRATEGY VMK — WEB V10.0 PREMIUM
+STRATEGY VMK — WEB V11.0 NUEVO LOGOTIPO
 
-Esta versión fue desarrollada sobre los archivos reales del sitio.
+Cambios realizados:
+- Se reemplazó el logotipo anterior por el logotipo VMK ESTRATEGY mostrado en el catálogo corporativo.
+- Se ajustó su tamaño y proporción en el encabezado.
+- Se actualizó también el logotipo del pie de página.
+- Se conservaron la estructura, los textos, productos, clientes, contacto y navegación de la V10.0.
+- Se mantuvieron todas las mejoras de legibilidad y contraste.
 
-Principales mejoras:
-- Corrección definitiva de textos oscuros sobre fondos oscuros.
-- Eliminación de la regla global que alteraba los colores de enlaces, párrafos y etiquetas.
-- Hero principal con mejor contraste, tipografía y jerarquía visual.
-- Beneficios inferiores totalmente legibles.
-- Sección Contacto con textos blancos, fondo refinado y fotografía mejor presentada.
-- Menú, tarjetas, clientes, productos y botones con acabado más moderno.
-- Mejoras adaptables para computadoras, tabletas y celulares.
-- Código visual consolidado en assets/css/styles.css.
-- Conservación de productos, clientes, imágenes, formulario y navegación existentes.
-
-PUBLICACIÓN
+Publicación:
 1. Descomprima el ZIP.
 2. Copie todos los archivos a Documentos/GitHub/strategyvmk.github.io.
 3. Reemplace los archivos existentes.

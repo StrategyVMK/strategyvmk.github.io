@@ -208,3 +208,29 @@ footer a:hover{color:#ff73b6!important}
   .hero .lead{font-size:.98rem!important}
 }
 
+
+/* V11.0 — Nuevo logotipo corporativo VMK */
+.brand img{
+  width:112px!important;
+  height:82px!important;
+  object-fit:contain!important;
+  margin-right:16px!important;
+}
+.footer-brand img{
+  width:82px!important;
+  height:62px!important;
+  object-fit:contain!important;
+}
+@media(max-width:900px){
+  .brand img{
+    width:88px!important;
+    height:66px!important;
+  }
+}
+@media(max-width:580px){
+  .brand img{
+    width:74px!important;
+    height:58px!important;
+  }
+}
+
