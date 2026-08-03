@@ -1,16 +1,21 @@
-STRATEGY VMK — WEB V9.1 ACCESIBILIDAD
+STRATEGY VMK — WEB V10.0 PREMIUM
 
-Correcciones:
-- Se aumentó el contraste de los textos del hero principal.
-- Se corrigieron los beneficios inferiores que se veían demasiado oscuros.
-- Se reforzó el color blanco en párrafos sobre fondos oscuros.
-- Se mejoró el subtítulo en color rosado.
-- Se oscureció ligeramente la superposición de fondo para facilitar la lectura.
-- Se reforzó la legibilidad de la sección Contacto y del panel corporativo.
-- Se mantuvieron todos los contenidos, productos y clientes de la versión anterior.
+Esta versión fue desarrollada sobre los archivos reales del sitio.
 
-Publicación:
+Principales mejoras:
+- Corrección definitiva de textos oscuros sobre fondos oscuros.
+- Eliminación de la regla global que alteraba los colores de enlaces, párrafos y etiquetas.
+- Hero principal con mejor contraste, tipografía y jerarquía visual.
+- Beneficios inferiores totalmente legibles.
+- Sección Contacto con textos blancos, fondo refinado y fotografía mejor presentada.
+- Menú, tarjetas, clientes, productos y botones con acabado más moderno.
+- Mejoras adaptables para computadoras, tabletas y celulares.
+- Código visual consolidado en assets/css/styles.css.
+- Conservación de productos, clientes, imágenes, formulario y navegación existentes.
+
+PUBLICACIÓN
 1. Descomprima el ZIP.
-2. Copie y reemplace todos los archivos dentro del repositorio local strategyvmk.github.io.
-3. En GitHub Desktop realice Commit to main.
-4. Luego seleccione Push origin.
+2. Copie todos los archivos a Documentos/GitHub/strategyvmk.github.io.
+3. Reemplace los archivos existentes.
+4. En GitHub Desktop realice Commit to main.
+5. Luego seleccione Push origin.
