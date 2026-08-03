@@ -255,6 +255,89 @@ html{scroll-behavior:smooth}
 }
 </style>
 
+
+<style>
+/* V9.1 — Corrección integral de contraste y legibilidad */
+.hero .eyebrow,
+.hero-copy .eyebrow{
+  color:#ff73b6!important;
+  opacity:1!important;
+  font-weight:800!important;
+  text-shadow:0 1px 3px rgba(0,0,0,.45);
+}
+
+.hero-copy > p:not(.eyebrow),
+.hero p:not(.eyebrow){
+  color:#ffffff!important;
+  opacity:1!important;
+  font-size:1.06rem!important;
+  line-height:1.65!important;
+  text-shadow:0 1px 3px rgba(0,0,0,.55);
+}
+
+.hero .hero-points,
+.hero .hero-points span,
+.hero .hero-points li,
+.hero .hero-points div,
+.hero .benefits,
+.hero .benefits span,
+.hero .benefits li,
+.hero .benefits div{
+  color:#ffffff!important;
+  opacity:1!important;
+  font-weight:600!important;
+  text-shadow:0 1px 3px rgba(0,0,0,.65);
+}
+
+.hero .hero-points strong,
+.hero .benefits strong{
+  color:#ffffff!important;
+}
+
+.hero::before{
+  background:linear-gradient(
+    90deg,
+    rgba(3,21,38,.90) 0%,
+    rgba(3,26,46,.82) 46%,
+    rgba(3,26,46,.45) 72%,
+    rgba(3,26,46,.20) 100%
+  )!important;
+}
+
+#contacto .eyebrow,
+#contacto .contact-grid .eyebrow{
+  color:#a9dcff!important;
+  opacity:1!important;
+}
+
+#contacto .contact-grid > div > p:not(.eyebrow){
+  color:#ffffff!important;
+  opacity:1!important;
+  text-shadow:0 1px 3px rgba(0,0,0,.32);
+}
+
+.corporate-info-item h3,
+.corporate-info-item p,
+.corporate-info-item a,
+.corporate-info-item strong{
+  opacity:1!important;
+}
+
+.topbar,
+.topbar a,
+.topbar span{
+  color:#ffffff!important;
+  opacity:1!important;
+}
+
+@media(max-width:760px){
+  .hero-copy > p:not(.eyebrow),
+  .hero p:not(.eyebrow){
+    font-size:1rem!important;
+  }
+}
+</style>
+
 </head>
 <body>
 <div class="topbar"><div class="container topbar-inner"><span>Agencia BTL y Marketing Outsourcing · Lima, Perú</span><div><a href="tel:+51997164811">997 164 811</a><i>·</i><a href="mailto:vcarassa@gmail.com">vcarassa@gmail.com</a></div></div></div>
