@@ -234,3 +234,27 @@ footer a:hover{color:#ff73b6!important}
   }
 }
 
+
+/* V10.2 — Logotipo corporativo actualizado */
+.brand img{
+  width:108px!important;
+  height:84px!important;
+  object-fit:contain!important;
+  background:#fff;
+  padding:2px;
+  margin-right:16px!important;
+}
+.footer-brand img{
+  width:86px!important;
+  height:66px!important;
+  object-fit:contain!important;
+  background:#fff;
+  padding:2px;
+}
+@media(max-width:900px){
+  .brand img{width:88px!important;height:68px!important}
+}
+@media(max-width:580px){
+  .brand img{width:74px!important;height:58px!important}
+}
+
