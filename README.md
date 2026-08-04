@@ -1,10 +1,10 @@
-STRATEGY VMK — WEB V10.2 LOGOTIPO PROFESIONAL
+STRATEGY VMK — WEB V10.3 LOGO PREMIUM
 
 Cambios realizados:
-- Se reemplazó el logotipo anterior por el diseño corporativo proporcionado en PDF.
-- El nuevo logotipo muestra VMK ESTRATEGY — MARKETING OUTSOURCING.
-- Se optimizó la imagen en alta resolución y con márgenes uniformes.
-- Se ajustó su presentación en el encabezado y pie de página.
+- Se amplió el logotipo corporativo para mejorar la visibilidad de sus detalles.
+- Se eliminaron las palabras “Strategy VMK” y “Agencia integral BTL” que aparecían a la derecha del logotipo.
+- Se ajustó la altura del encabezado para conservar una presentación equilibrada.
+- Se mantiene el nuevo logotipo corporativo.
 - Se conserva el texto actualizado y legible de la sección Portafolio.
 - Se mantienen productos, clientes, navegación, contacto y demás mejoras anteriores.
 

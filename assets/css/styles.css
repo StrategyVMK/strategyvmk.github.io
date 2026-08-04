@@ -258,3 +258,48 @@ footer a:hover{color:#ff73b6!important}
   .brand img{width:74px!important;height:58px!important}
 }
 
+
+/* V10.3 — Logo Premium ampliado y sin texto lateral */
+.brand{
+  min-width:auto!important;
+  flex:0 0 auto!important;
+}
+.brand img{
+  width:150px!important;
+  height:108px!important;
+  object-fit:contain!important;
+  margin-right:0!important;
+  background:#fff;
+  padding:2px;
+}
+.footer-brand img{
+  width:112px!important;
+  height:82px!important;
+  object-fit:contain!important;
+  margin-right:0!important;
+  background:#fff;
+  padding:2px;
+}
+.nav-wrap{
+  min-height:112px!important;
+  height:auto!important;
+}
+@media(max-width:900px){
+  .brand img{
+    width:118px!important;
+    height:88px!important;
+  }
+  .nav-wrap{
+    min-height:94px!important;
+  }
+}
+@media(max-width:580px){
+  .brand img{
+    width:98px!important;
+    height:74px!important;
+  }
+  .nav-wrap{
+    min-height:82px!important;
+  }
+}
+
