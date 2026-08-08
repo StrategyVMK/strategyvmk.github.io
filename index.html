@@ -20,15 +20,19 @@ body p,body li{font-size:1.02rem}
 <style>
 .contact-visual{overflow:hidden;border-radius:18px;min-height:360px;background:#071f3d;box-shadow:0 20px 50px rgba(2,18,40,.28)}
 
-.contact-visual img{
-    width:100%;
-    height:100%;
-    min-height:520px;
-    object-fit:contain;
-    object-position:center;
+.contact-visual{
+    overflow:hidden;
+    border-radius:18px;
     background:#071f3d;
-    padding:0;
-    display:block;
+
+    /* El cuadro será más ancho, no más alto */
+    width:100%;
+    max-width:560px;
+    aspect-ratio:16 / 10;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .corporate-info-panel{padding:34px clamp(18px,4vw,56px) 38px;background:radial-gradient(circle at 85% 15%,rgba(232,33,125,.28),transparent 34%),linear-gradient(120deg,#06224a 0%,#0a3470 42%,#3a185e 100%);color:#fff}
